@@ -1,0 +1,32 @@
+extends ./layout/index
+
+block slider
+    .slider 
+        h1 Rio de Janiero 
+        em Aventura
+block contenido
+    main.container.mt-5 
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5 
+            .col-md-6 
+                p Morbi blandit lorem nec fringilla vulputate. Integer arcu tortor, consectetur vitae tortor in, tincidunt scelerisque lorem. Pellentesque mattis porttitor lorem. Aliquam dignissim, ipsum molestie iaculis congue, nulla urna molestie elit, vitae pulvinar augue nibh ac mi. Duis nec pretium quam, vel aliquam nunc. Nullam porta ultricies risus, eget dapibus elit. Nullam varius sagittis nisl a mattis.
+                p Quisque odio magna, pulvinar eget convallis posuere, egestas non nibh. Phasellus ante turpis, lacinia sed ligula vitae, mollis laoreet mauris. Aenean rhoncus, nisi vel semper facilisis, justo ipsum convallis ante, eget malesuada orci mauris quis sapien.
+            .col-md-6 
+                img(src="/img/inicio_nosotros.jpg", alt="imagen nosotros" class="img-fluid")
+
+
+        include ./layout/bloque_viajes
+
+    .descuento 
+        .container 
+            .row 
+            .col-md-6 
+                .contenido 
+                    h3 5% de Descuent
+                    p.titulo Viaje a Canada 
+                    p.fecha 19 de Julio de 2023 - 26 de Julio de 2023
+                    p.precio $2,500 USD
+
+    .container 
+        h2.mt-5.text-center Testimoniales
+        include ./layout/bloque_testimoniales
